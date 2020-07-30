@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<html>
+		  <head>
+			  		<style>
+		.container{
+			width:80%
+			margin: 0 auto;
+		}
+		
+		p.ex1 {
+  			padding-right: 150px;
+		}
+		
+		nav{
+			float:center;
+		}
+		
+		nav ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		nav li{
+			display: inline-block;
+			margin-left: 70px;
+			padding-top: 25px;
+			position: relative;
+		}
+		
+		nav a{
+			color: #2cd4d1;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
+		
+		nav a:hover {
+    		color: #FFFFFF;
+				
+		}
+		
+		nav a::before{
+			content: " ";
+			display: block;
+			height: 5px;
+			width: 100%;
+			background-color: #FFFFFF;
+			position: absolute;
+			top: 0;
+			width: 0%;
+			transition: all ease-in-out 300ms;
+		}
+		
+		nav a:hover::before{
+			width: 100%;
+		}
+	</style>
+			 <title>
+              Feedback form
+             </title>
+                    
+		  </head>
+	
+	             
+
+	<body>
+<body style="background-color:#343434;">  
+    <section>
+		<header>
+			<title> Pathways To Water</title>
+				<div class="container">
+					<nav align="center">
+						<ul>
+						<li><a href="Offical Website.html">Home</a></li>
+						<li><a href="AboutDrone.html">About The Drone</a></li>
+						<li><a href="AboutUs.html">About Us</a></li>
+						<li><a href="Research.html">Research</a></li>
+						<li><a href="Sponsors.html">Sponsors</a></li>
+						</ul>	
+					</nav>
+				</div>
+		</header>
+			 <div>
+			 <h1> Rate This </h1>
+			 </div>
+
+
+		<form action="/action_page.php" target="_blank"> <!-- This piece of code is the target page for my form -->
+	     <fieldset> <!-- This piece of codemakes the box around the general consensus -->
+		      <legend> 
+          Rating: How good is this game?
+          </legend>
+
+      <p> In this rating, we consider 1 the worst and 10 the best </p>
+  			     <input class=".form_1" type="radio" name="rating" value="1"  >1<br> <!-- This piece of code shows radio buttons to define the gender -->
+  			     <input class=".form_1" type="radio" name="rating" value="2">2<br>
+             <input class=".form_1" type="radio" name="rating" value="3">3<br>
+             <input class=".form_1" type="radio" name="rating" value="4">4<br>
+             <input class=".form_1" type="radio" name="rating" value="5">5<br>
+             <input class=".form_1" type="radio" name="rating" value="6">6<br>
+             <input class=".form_1" type="radio" name="rating" value="7">7<br>
+             <input class=".form_1" type="radio" name="rating" value="8">8<br>
+             <input class=".form_1" type="radio" name="rating" value="9">9<br>
+             <input class=".form_1" type="radio" name="rating" value="10">10<br>
+      <p> Any improvements, questions, comments, or concerns?</p><br>
+    
+    <form action="/action_page.php">
+          <textarea name="message" rows="10" cols="30"></textarea>
+     </fieldset>
+
+     <fieldset>
+          <legend>
+          Verifiability:
+          </legend>
+
+      <h4>Please complete this test to check if you are a human or not. If you anwser wrong, a deadly Trojan virus will be implanted on to your computer and if you anwser right then the form will be submitted. Which one of these character's has no nose?</h4>
+
+            <button type="button" onclick="alert('Downloading your personal information')">Voldemort!</button> <!-- This piece of code causes an alert to appear on the top of your screen -->
+            <button type="button" onclick="alert('Thank you the form has been submitted')">Harry Potter!</button>
+     </fieldset>
+     
+</body>
+</html>
